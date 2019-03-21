@@ -9,7 +9,7 @@
 #=================================================
 
   update_source="https://raw.githubusercontent.com/liberodark/Unattended-Debian/master/install.sh"
-  version="0.0.3"
+  version="0.0.4"
 
   echo "Welcome on Unattended Install Script $version"
 
@@ -82,7 +82,7 @@ echo "Install Unattended Updates"
 
   # Check OS & unattended
 
-  which nrpe &> /dev/null
+  which unattended-upgrades &> /dev/null
 
   if [ $? != 0 ]; then
 
