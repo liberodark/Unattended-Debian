@@ -8,8 +8,8 @@
 # CHECK UPDATE
 #=================================================
 
-  update_source="https://raw.githubusercontent.com/liberodark/Unattended-Debian/master/install.sh"
-  version="0.0.4"
+  update_source="https://raw.githubusercontent.com/liberodark/unattended-upates/master/install.sh"
+  version="0.0.5"
 
   echo "Welcome on Unattended Install Script $version"
 
