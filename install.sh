@@ -41,17 +41,7 @@ distribution=$(cat /etc/*release | head -n +1 | awk '{print $1}')
 
 apt=/etc/apt/apt.conf.d/02periodic
 
-unattended=/usr/lib64/nagios/plugins
-rhel_nrpe=/etc/nrpe.d
-test ! -e "$rhel_plugin" || echo "This path already contains a folder" | exit
-test ! -e "$rhel_nrpe" || echo "This path already contains a folder" | exit
-
-deb_plugin=/usr/lib/nagios/plugins
-deb_nrpe=/etc/nagios/nrpe.d
-test ! -e "$deb_plugin" || echo "This path already contains a folder" | exit
-test ! -e "$deb_nrpe" || echo "This path already contains a folder" | exit
-
-deb_conf='/ Control parameters for cron jobs by /etc/cron.daily/apt-compat //
+unattended='/ Control parameters for cron jobs by /etc/cron.daily/apt-compat //
 
 
 // Enable the update/upgrade script (0=disable)
