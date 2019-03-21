@@ -82,7 +82,7 @@ echo "Install Unattended Updates"
 
   # Check OS & unattended
 
-  which unattended-upgrades &> /dev/null
+  find $apt &> /dev/null
 
   if [ $? != 0 ]; then
 
