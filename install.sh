@@ -9,7 +9,7 @@
 #=================================================
 
   update_source="https://raw.githubusercontent.com/liberodark/unattended-upates/master/install.sh"
-  version="0.0.5"
+  version="0.0.6"
 
   echo "Welcome on Unattended Install Script $version"
 
