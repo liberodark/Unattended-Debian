@@ -9,7 +9,7 @@
 #=================================================
 
   update_source="https://raw.githubusercontent.com/liberodark/Unattended-Debian/master/install.sh"
-  version="0.0.1"
+  version="0.0.2"
 
   echo "Welcome on Unattended Install Script $version"
 
