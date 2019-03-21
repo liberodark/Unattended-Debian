@@ -9,7 +9,7 @@
 #=================================================
 
   update_source="https://raw.githubusercontent.com/liberodark/Unattended-Debian/master/install.sh"
-  version="0.0.2"
+  version="0.0.3"
 
   echo "Welcome on Unattended Install Script $version"
 
@@ -41,37 +41,37 @@ distribution=$(cat /etc/*release | head -n +1 | awk '{print $1}')
 
 apt=/etc/apt/apt.conf.d/02periodic
 
-unattended='/ Control parameters for cron jobs by /etc/cron.daily/apt-compat //
-
-
-// Enable the update/upgrade script (0=disable)
-APT::Periodic::Enable "1";
-
-
-// Do "apt-get update" automatically every n-days (0=disable)
-APT::Periodic::Update-Package-Lists "1";
-
-
-// Do "apt-get upgrade --download-only" every n-days (0=disable)
-APT::Periodic::Download-Upgradeable-Packages "1";
-
-
-// Run the "unattended-upgrade" security upgrade script
-// every n-days (0=disabled)
-// Requires the package "unattended-upgrades" and will write
-// a log in /var/log/unattended-upgrades
-APT::Periodic::Unattended-Upgrade "1";
-
-
-// Do "apt-get autoclean" every n-days (0=disable)
-APT::Periodic::AutocleanInterval "21";
-
-
-// Send report mail to root
-//     0:  no report             (or null string)
-//     1:  progress report       (actually any string)
-//     2:  + command outputs     (remove -qq, remove 2>/dev/null, add -d)
-//     3:  + trace on
+unattended='/ Control parameters for cron jobs by /etc/cron.daily/apt-compat //\n
+\n
+\n
+// Enable the update/upgrade script (0=disable)\n
+APT::Periodic::Enable "1";\n
+\n
+\n
+// Do "apt-get update" automatically every n-days (0=disable)\n
+APT::Periodic::Update-Package-Lists "1";\n
+\n
+\n
+// Do "apt-get upgrade --download-only" every n-days (0=disable)\n
+APT::Periodic::Download-Upgradeable-Packages "1";\n
+\n
+\n
+// Run the "unattended-upgrade" security upgrade script\n
+// every n-days (0=disabled)\n
+// Requires the package "unattended-upgrades" and will write\n
+// a log in /var/log/unattended-upgrades\n
+APT::Periodic::Unattended-Upgrade "1";\n
+\n
+\n
+// Do "apt-get autoclean" every n-days (0=disable)\n
+APT::Periodic::AutocleanInterval "21";\n
+\n
+\n
+// Send report mail to root\n
+//     0:  no report             (or null string)\n
+//     1:  progress report       (actually any string)\n
+//     2:  + command outputs     (remove -qq, remove 2>/dev/null, add -d)\n
+//     3:  + trace on\n
 APT::Periodic::Verbose "2";'
 
 
